@@ -1,0 +1,6 @@
+{
+    "greeting": {
+        "voice": "Thank you for calling SOS! We are here to help. We have sent you a text message with an introduction. Please respond to continue.",
+        "sms": "Thank you for contacting $O$. Please reply to this message to continue."
+    }
+}
