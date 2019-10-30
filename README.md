@@ -1,2 +1,2 @@
-# chloe
-Chloe is a bot.
+# greeter
+Greeter is a bot.
