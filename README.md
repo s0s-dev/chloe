@@ -1,2 +1,1 @@
-# greeter
-Greeter is a bot.
+# Say Hello, Riff
