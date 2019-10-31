@@ -22,7 +22,9 @@ app.all('/answer', (req, res) => {
   console.log("Voice: " + greeting.voice)
 
   // send text message
-  sendSMS(caller, twilioNumber)
+  var timer = setTimeout(function() {
+    sendSMS(caller, twilioNumber)
+  },5000)
   console.log("Text: " + greeting.sms)
 
 })
