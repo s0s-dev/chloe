@@ -8,6 +8,7 @@ const voiceResponse = require('twilio').twiml.VoiceResponse
 const app = express()
 var greeting = greeting_file.greeting
 
+const delay = 12000 // 12s delay
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.all('/answer', (req, res) => {
@@ -24,7 +25,7 @@ app.all('/answer', (req, res) => {
   // send text message
   var timer = setTimeout(function() {
     sendSMS(caller, twilioNumber)
-  },10000)
+  },delay)
   console.log("Text: " + greeting.sms)
 
 })
