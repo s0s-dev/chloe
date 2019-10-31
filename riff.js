@@ -24,7 +24,7 @@ app.all('/answer', (req, res) => {
   // send text message
   var timer = setTimeout(function() {
     sendSMS(caller, twilioNumber)
-  },5000)
+  },10000)
   console.log("Text: " + greeting.sms)
 
 })
